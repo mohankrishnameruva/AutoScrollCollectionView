@@ -7,7 +7,8 @@
 
 ## Example
 Want to scroll your collectionView continuously after specific intervals?. You can use this class to get it done within seconds.
-
+![Continuous Horizontal Scrolling](https://github.com/mohankrishnameruva/Assets/blob/master/AutoScrollCollectionViewHorizontal.mov)
+![Continuous Vertical Scrolling](https://github.com/mohankrishnameruva/Assets/blob/master/AutoScrollCollectionViewVertical.mov)
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements

@@ -6,10 +6,13 @@
 [![Platform](https://img.shields.io/cocoapods/p/AutoScrollCollectionView.svg?style=flat)](https://cocoapods.org/pods/AutoScrollCollectionView)
 
 ## Example
-<img src="https://github.com/mohankrishnameruva/Assets/blob/master/HorizontalScroll.gif" align="left">
+<span>
+<img src="https://github.com/mohankrishnameruva/Assets/blob/master/HorizontalScroll.gif" width="400">
+<img src="https://github.com/mohankrishnameruva/Assets/blob/master/VerticalScroll.gif" width="400">
+</span> 
+
 Want to scroll your collectionView continuously after specific intervals?. You can use this class to get it done within seconds.
-![Continuous Horizontal Scrolling](https://github.com/mohankrishnameruva/Assets/blob/master/HorizontalScroll.gif)
-![Continuous Vertical Scrolling](https://github.com/mohankrishnameruva/Assets/blob/master/VerticalScroll.gif)
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements

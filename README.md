@@ -6,6 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/AutoScrollCollectionView.svg?style=flat)](https://cocoapods.org/pods/AutoScrollCollectionView)
 
 ## Example
+Want to scroll your collectionView continuously after specific intervals?. You can use this class to get it done within seconds.
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 

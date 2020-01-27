@@ -22,7 +22,7 @@ pod 'AutoScrollCollectionView'
 
 ## Author
 
-mohankrishnameruva, mmeruva@fala.cl
+mohanmeruva, mohanmeruva989@gmail.com
 
 ## License
 

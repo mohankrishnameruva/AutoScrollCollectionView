@@ -1,0 +1,6 @@
+framework module Pods_AutoScrollCollectionView_Tests {
+  umbrella header "Pods-AutoScrollCollectionView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

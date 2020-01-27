@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import AutoScrollCollectionView
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var autoScrollCollectionView: AutoScrollCollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

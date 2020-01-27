@@ -1,0 +1,22 @@
+{
+  "name": "AutoScrollCollectionView",
+  "version": "0.1.0",
+  "summary": "A short description of AutoScrollCollectionView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mohankrishnameruva/AutoScrollCollectionView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mohankrishnameruva": "mmeruva@fala.cl"
+  },
+  "source": {
+    "git": "https://github.com/mohankrishnameruva/AutoScrollCollectionView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AutoScrollCollectionView/Classes/**/*"
+}

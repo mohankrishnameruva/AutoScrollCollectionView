@@ -1,0 +1,6 @@
+framework module AutoScrollCollectionView {
+  umbrella header "AutoScrollCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -24,9 +24,7 @@ it, simply add the following line to your Podfile:
 pod 'AutoScrollCollectionView'
 ```
 And run `pod install` from your directory
- ```ruby
- pod install
- ```
+
  
 In your storyboard subclass your collectionview from  "AutoScrollCollectionView"
 Import the pod in your viewController "import AutoScrollCollectionView"

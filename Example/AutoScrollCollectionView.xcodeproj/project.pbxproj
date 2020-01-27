@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26FA32FD23D9D886003A3F73 /* AutoScrollCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FA32FC23D9D886003A3F73 /* AutoScrollCollectionView.swift */; };
 		50A8C1BD99DF80172A99BC05 /* Pods_AutoScrollCollectionView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7495189755D5B9C3F257BA /* Pods_AutoScrollCollectionView_Example.framework */; };
 		553606F3929D8E6ADB0B2A4F /* Pods_AutoScrollCollectionView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F647865FE27794F745D483C6 /* Pods_AutoScrollCollectionView_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -30,7 +29,6 @@
 
 /* Begin PBXFileReference section */
 		20A8B4137FCD6899F7052F53 /* Pods-AutoScrollCollectionView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoScrollCollectionView_Example.release.xcconfig"; path = "Target Support Files/Pods-AutoScrollCollectionView_Example/Pods-AutoScrollCollectionView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		26FA32FC23D9D886003A3F73 /* AutoScrollCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollCollectionView.swift; sourceTree = "<group>"; };
 		50F1D8B9B53F0BA5517C6C38 /* Pods-AutoScrollCollectionView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoScrollCollectionView_Example.debug.xcconfig"; path = "Target Support Files/Pods-AutoScrollCollectionView_Example/Pods-AutoScrollCollectionView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AutoScrollCollectionView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoScrollCollectionView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				26FA32FC23D9D886003A3F73 /* AutoScrollCollectionView.swift */,
 			);
 			name = "Example for AutoScrollCollectionView";
 			path = AutoScrollCollectionView;
@@ -335,7 +332,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				26FA32FD23D9D886003A3F73 /* AutoScrollCollectionView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

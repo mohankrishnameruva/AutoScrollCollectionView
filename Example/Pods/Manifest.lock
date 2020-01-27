@@ -1,5 +1,5 @@
 PODS:
-  - AutoScrollCollectionView (0.1.0)
+  - AutoScrollCollectionView (0.1.01)
 
 DEPENDENCIES:
   - AutoScrollCollectionView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AutoScrollCollectionView: b3f7806bb09b082ea33edebf20fc066a16614de2
+  AutoScrollCollectionView: 9eaf02ccff3d32e01cb0c27a002778e9a34c4384
 
 PODFILE CHECKSUM: d375917036772d0aa3843575a3107712823d223f
 

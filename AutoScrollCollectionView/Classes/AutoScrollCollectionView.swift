@@ -10,22 +10,9 @@ import UIKit
 @IBDesignable
 public class AutoScrollCollectionView: UICollectionView {
     
-    
-    public var timeIntervalForScroll: Double = 2.0
-    
-    
-    var timer: Timer?
-    
-    var timeInterval: TimeInterval {
-        get {
-            return TimeInterval(exactly: timeIntervalForScroll)!
-        }
-    }
-    
+    private var timer: Timer?
     
     private func commonInit() {
-        //        self.collectionViewLayout = AutoScrollCollectionViewLayout()
-        startAutoScrolling()
         self.backgroundColor = UIColor.magenta
     }
     
@@ -42,16 +29,14 @@ public class AutoScrollCollectionView: UICollectionView {
     public override func awakeFromNib() {
     }
     
-    public func startAutoScrolling() {
+    public func startAutoScrolling(withTimeInterval timeInterval: TimeInterval = 2.0) {
         if timer != nil { timer?.invalidate() }
         timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(autoScrollCollectionView), userInfo: nil, repeats: true)
     }
     
-    public func stopScrolling() {
+    public func stopAutoScrolling() {
         timer?.invalidate()
     }
-    
-    
     
     @objc private func autoScrollCollectionView() {
         
@@ -61,11 +46,32 @@ public class AutoScrollCollectionView: UICollectionView {
         guard let scrollDirection = (self.collectionViewLayout as? UICollectionViewFlowLayout)?.scrollDirection else { return  }
         switch scrollDirection {
         case .horizontal:
-            self.scrollToItem(at: nextIndex, at: .left, animated: true)
+            DispatchQueue.main.async {
+                self.scrollToItem(at: nextIndex, at: .left, animated: true)
+            }
         case .vertical:
-            self.scrollToItem(at: nextIndex, at: .top, animated: true)
+            DispatchQueue.main.async {
+                self.scrollToItem(at: nextIndex, at: .top, animated: true)
+            }
         @unknown default:
             fatalError()
+        }
+    }
+    
+    private func getNextItemIndexToScroll() -> IndexPath? {
+        
+        if let lastCell = getLastVisbleCell(), let lastIndex = indexPath(for: lastCell) {
+            if lastIndex.row == (numberOfItems(inSection: 0) - 1) && bounds.contains(lastCell.frame) {
+                return IndexPath(item: 0, section: 0)
+            }
+        }
+        
+        if let partialVisibleCell = checkForPartialVisibleCells() {
+            return self.indexPath(for: partialVisibleCell)
+        } else {
+            guard let firstVisibleCell = getFirstVisbleCell(), let firstVisibleIndex = self.indexPath(for: firstVisibleCell) else { return nil}
+            let nextItem = (firstVisibleIndex.item + (self.visibleCells.count)) % self.numberOfItems(inSection: 0)
+            return IndexPath(item: nextItem, section: 0)
         }
     }
     
@@ -102,22 +108,7 @@ public class AutoScrollCollectionView: UICollectionView {
     }
     
     
-    private func getNextItemIndexToScroll() -> IndexPath? {
-        
-        if let lastCell = getLastVisbleCell(), let lastIndex = indexPath(for: lastCell) {
-            if lastIndex.row == (numberOfItems(inSection: 0) - 1) && bounds.contains(lastCell.frame) {
-                return IndexPath(item: 0, section: 0)
-            }
-        }
-        
-        if let partialVisibleCell = checkForPartialVisibleCells() {
-            return self.indexPath(for: partialVisibleCell)
-        } else {
-            guard let firstVisibleCell = getFirstVisbleCell(), let firstVisibleIndex = self.indexPath(for: firstVisibleCell) else { return nil}
-            let nextItem = (firstVisibleIndex.item + (self.visibleCells.count)) % self.numberOfItems(inSection: 0)
-            return IndexPath(item: nextItem, section: 0)
-        }
-    }
+
     
     private func checkForPartialVisibleCells() -> UICollectionViewCell? {
         var partiallyVisibleCell: UICollectionViewCell?

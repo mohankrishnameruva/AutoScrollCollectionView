@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AutoScrollCollectionView'
-  s.version          = '0.1.01'
-  s.summary          = 'or scrolling the collection view continuosly and automatically after certain time interval'
+  s.version          = '1.0.1'
+  s.summary          = 'Using this pod you can scroll your collectionView Continuously at specific time intervals'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-For scrolling the collection view continuosly and automatically after certain time interval. You can directly subclass the AutoScrollCollectionView class and set time interval for autoscroll and you are ready to go.
+For scrolling the collection view to next visible item continuosly and automatically after specific time intervals. You can directly subclass the AutoScrollCollectionView class in the storyboard and call the method collectionView.startAutoScrollView() to start the scrolling and you can call collectionView.stopAutoScrolling() when you need it to stop
                        DESC
 
   s.homepage         = 'https://github.com/mohankrishnameruva/AutoScrollCollectionView'

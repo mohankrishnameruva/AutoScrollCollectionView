@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AutoScrollCollectionView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.01'
   s.summary          = 'or scrolling the collection view continuosly and automatically after certain time interval'
 
 # This description is used to generate tags and improve search results.

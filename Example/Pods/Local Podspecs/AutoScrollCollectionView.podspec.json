@@ -1,8 +1,8 @@
 {
   "name": "AutoScrollCollectionView",
-  "version": "0.1.01",
-  "summary": "or scrolling the collection view continuosly and automatically after certain time interval",
-  "description": "For scrolling the collection view continuosly and automatically after certain time interval. You can directly subclass the AutoScrollCollectionView class and set time interval for autoscroll and you are ready to go.",
+  "version": "1.0.1",
+  "summary": "Using this pod you can scroll your collectionView Continuously at specific time intervals",
+  "description": "For scrolling the collection view to next visible item continuosly and automatically after specific time intervals. You can directly subclass the AutoScrollCollectionView class in the storyboard and call the method collectionView.startAutoScrollView() to start the scrolling and you can call collectionView.stopAutoScrolling() when you need it to stop",
   "homepage": "https://github.com/mohankrishnameruva/AutoScrollCollectionView",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/mohankrishnameruva/AutoScrollCollectionView.git",
-    "tag": "0.1.01"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"
